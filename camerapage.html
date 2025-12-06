@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pothole Capture</title>
+<link rel="stylesheet" href="camerastyles.css">
+</head>
+<body>
+<div class="background"></div>
+
+<div class="container">
+    <div class="header-icon">
+        <i class="fas fa-camera"></i>
+        <h2>Pothole Capture</h2>
+    </div>
+
+    <div class="comment-box">
+        <label for="comment"><i class="fas fa-comment-dots"></i> Add Comment</label>
+        <textarea id="comment" rows="2" placeholder="Describe the pothole location and severity..."></textarea>
+    </div>
+
+    <div class="camera-box">
+        <video id="camera-preview" autoplay playsinline></video>
+    </div>
+
+    <div class="btn-row">
+        <button class="primary-btn" id="start-camera">
+            <i class="fas fa-video"></i> Start Camera
+        </button>
+        <button class="secondary-btn" id="switch-camera">
+            <i class="fas fa-sync-alt"></i> Switch
+        </button>
+        <button class="primary-btn" id="take-photo">
+            <i class="fas fa-camera"></i> Capture
+        </button>
+        <button class="secondary-btn" id="upload-photo">
+            <i class="fas fa-upload"></i> Upload
+        </button>
+    </div>
+    
+    <button class="primary-btn" id="save-photo" style="width: 100%; margin-top: 12px;">
+        <i class="fas fa-save"></i> Save & Report
+    </button>
+
+    <div class="output-box">
+        <img id="captured-img" alt="Captured Pothole">
+    </div>
+</div>
+
+<div class="status-msg" id="status-msg">Status Message</div>
+<script src="camerascript.js"></script>
+</body>
+</html>
